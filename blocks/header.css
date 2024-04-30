@@ -45,6 +45,10 @@
 }
 
 @media screen and (max-width: 768px) {
+  .header__container{
+    
+    padding-top: 90px;
+  }
     .header__title {
       margin: 0;
       margin-bottom: 32px;
@@ -62,14 +66,14 @@
     .header__subtitle{
       font-size: 30px;
       line-height: 1.2;
-      max-width: 720px;
+      width: 720px;
       text-align: center;
       margin: 0 auto;
   }
   
 }
   
-  @media screen and (min-width: 320px) {
+  @media screen and (max-width: 320px) {
     .header__container {
       padding: 0 16px;
     }

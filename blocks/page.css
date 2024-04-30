@@ -6,16 +6,3 @@
     flex-direction: column;
     gap: 92px;
   }
-
-  @media screen and (max-width: 768px) {
-    .page {
-      gap: 88px;
-    }
-  }
-  @media screen and (max-width: 470px) {
-    .page {
-      gap: 62px;
-    }
-  }
-  
-  
