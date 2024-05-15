@@ -1,17 +1,17 @@
 .city__content{
     display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(4, auto);
   gap: 40px;
-  
-  padding: 0 24px;
+  grid-template-areas: 
+  "title artists" 
+  "img texts"
+  "button texts"
+  "span texts";
   padding-top: 92px;
    
     
 }
 
 .city{
-    margin: 92px;
     width: 100%;
     max-width: 984px;
     margin: 0 auto;
@@ -19,29 +19,33 @@
     flex-direction: column;
 }
 .city__title{
-    
+    grid-area: title;
     font-size: 72px;
     max-width: 460px;
 }
+.city__artists-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    grid-area: artists;
+}
 .city__img{
-    margin-top: 48px;
+    grid-area: img;
     max-width: 460px;
-    margin-bottom: 48px;
+    box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.50);
 }
 .city__article{
-    padding-top: 180px;
+    grid-area: texts;
     line-height: 1.05;
     
 }
 .city__art{
-    padding-top: 8px;
     font-size: 18px;
     display: block;
     font-weight: 900;
     
 }
 .city__subtitle{
-    display: block;
     color: rgba(170, 170, 170, 1);
     font-size: 12px;
 
@@ -69,19 +73,18 @@
     font-size: 18px;
     font-weight: 600;
     background-image: linear-gradient(to right, #0278FE, #003A7B);
-   
+    grid-area: button;
     padding: 13px 20px;
     border-radius: 4px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+    text-align: center;
  }
  
 
 
 
 @media screen and (max-width: 768px) {
-    .city__content{
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(4, auto);
-    }
+    
     .city__title{
         font-size: 42px;
         max-width: 340px;
@@ -98,4 +101,26 @@
         grid-row-gap: 46px;
       }
     
+}
+@media screen and (max-width: 470px) {
+    /*  fazer o grid area igual la em cima mas um embaixo do outro
+     */
+     
+     .city__content{
+        grid-template-areas: 
+         "title " 
+         "artists"
+         "img"
+         "texts";
+         padding-top: 62px;
+        }
+        .city__title{
+            font-size: 32px;
+        }
+      
+   
+    
+    
+    
+
 }
