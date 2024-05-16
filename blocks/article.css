@@ -1,27 +1,21 @@
 .article {
-    max-width: 830px;
-    margin: 0 auto;
-    padding: 0;
+  padding: 0 30px; 
+  max-width: none; 
 }
 
 .article__content {
-    max-width: 830px; 
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
+  padding-top: 90px;
 }
 
 .article__title {
-    font-size: 54px;
-    line-height: 1.07;
-    font-weight: 900;
-    margin-bottom: 16px;
+  font-size: 54px;
+  line-height: 1.07;
+  font-weight: 900;
+  margin-bottom: 16px;
 }
 
-.article__quote{
-    font-size: 24px;
-  line-height: 1.4;
-  margin-bottom: 8px;
+.article__quote {
+  font-size: 24px;
 }
 
 .article__quote-cite {
@@ -32,53 +26,51 @@
   line-height: 1.4;
   margin-bottom: 32px;
 }
-.article__paragraph{
-    font-size: 16px;
-    line-height: 1.63;
+
+.article__paragraph {
+  font-size: 16px;
+  line-height: 1.63;
 }
 
-@media screen and (max-width: 768px) {
-    .article__title {
-        font-size: 32px;
-        line-height: 35px;
-        margin: 0 auto;
-    }
-    .article__content{
-        padding: 0 24px;
-      }
-      .article__quote{
-        padding-top: 50px ;
-      }
-      .article__quote-cite{
-        padding-top: 26px;
-      }
-      .article__paragraph{
-        padding-top: 32px;
-      }
+@media screen and (max-width: 769px) {
+  .article__title {
+      font-size: 32px;
+      line-height: 35px;
+      margin: 0 auto;
+  }
+  .article__content {
+      padding: 24px;
+  }
+  .article__quote {
+      padding-top: 50px;
+  }
+  .article__quote-cite {
+      padding-top: 26px;
+  }
+  .article__paragraph {
+      padding-top: 32px;
+  }
 }
 
 @media screen and (max-width: 320px) {
-  
-    .article {
-        padding: 0 16px;
-        
-    }
-    
-    .article__quote {
-        margin-top: 40px;
-        line-height: 30px;
-        margin-bottom: 55px;
-    }
-    .article__content{
-        padding: 16px;
-      }
-      .article__quote{
-        padding-top: 40px ;
-      }
-      .article__quote-cite{
-        padding-top: 10px;
-      }
-      .article__paragraph{
-        padding-top: 32px;
-      }
+  .article {
+      padding: 0 16px;
+  }
+  .article__quote {
+      margin-top: 40px;
+      line-height: 30px;
+      margin-bottom: 55px;
+  }
+  .article__content {
+      padding: 16px;
+  }
+  .article__quote {
+      padding-top: 40px;
+  }
+  .article__quote-cite {
+      padding-top: 10px;
+  }
+  .article__paragraph {
+      padding-top: 32px;
+  }
 }

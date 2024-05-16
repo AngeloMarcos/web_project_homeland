@@ -1,25 +1,17 @@
-*{
-  outline: 1px solid red;
+.page {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
 }
 
+@media screen and (max-width: 769px) {
+  .page {
+      gap: 88px; /* Adicionado o espaçamento entre elementos */
+  }
+}
 
-.page {
-    width: 100%;
-    max-width: 1280px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    gap: 92px;
+@media screen and (max-width: 320px) {
+  .page {
+      padding: 8px; /* Adicionado o preenchimento para telas menores */
   }
-
-  @media screen and (max-width: 769px) {
-    .page {
-      gap: 88px;
-    }
-  }
-  @media screen and (max-width: 320px) {
-    .page {
-      padding: 8px;
-    }
-  }
-  
+}

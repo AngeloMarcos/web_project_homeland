@@ -1,158 +1,144 @@
-.city__content{
-    display: grid;
-  gap: 40px;
-  grid-template-areas: 
-  "title artists" 
-  "img texts"
-  "button texts"
-  "span texts";
-  padding-top: 92px;
-   
-    
-}
 
-.city{
+
+.city {
     width: 100%;
     max-width: 984px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
 }
-.city__title{
+.city__content {
+    display: grid;
+    gap: 40px;
+    grid-template-areas: 
+        "title artists" 
+        "img texts"
+        "button texts"
+        "span texts";
+    padding-top: 92px;
+}
+.city__title {
     grid-area: title;
     font-size: 72px;
     max-width: 460px;
 }
-.city__artists-content{
+
+.city__artists-content {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     grid-area: artists;
 }
-.city__img{
+
+.city__img {
     grid-area: img;
-    max-width: 460px;
+    width: 100%;
+    max-width: 100%; /* Adicionei esta linha para garantir que a imagem se ajuste corretamente ao contêiner */
     box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.50);
 }
-.city__article{
+
+.city__article {
     grid-area: texts;
     line-height: 1.05;
-    
 }
-.city__art{
+
+.city__art {
     font-size: 18px;
     display: block;
     font-weight: 900;
-    
 }
-.city__subtitle{
+
+.city__subtitle {
     color: rgba(170, 170, 170, 1);
     font-size: 12px;
-
 }
 
-.city__paragraph{
+.city__paragraph {
     margin-top: 25px;
     line-height: 1.63;
     max-width: 484px;
 }
 
-
-
-.city__gales-content{
-    
-    padding-top: 140px;
-    max-width: 484px;
-    line-height: 1.5;
-}
-
-
-.city__btn-link{
+.city__btn-link {
     text-decoration: none;
     color: inherit;
     font-size: 18px;
     font-weight: 600;
-    background-image: linear-gradient(to right, #0278FE, #003A7B);
+    background: linear-gradient(90deg, #0278FE 0%, #003A7B 99.98%);
     grid-area: button;
     padding: 13px 20px;
     border-radius: 4px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
     text-align: center;
- }
- 
+}
 
+.city__btn-link:hover {
+    background: linear-gradient(90deg, rgba(2, 120, 254, 0.25) 0%, rgba(0, 58, 123, 0.25) 99.98%);
+}
 
-
-@media screen and (max-width: 770px) {
-    .city__content{
+@media screen and (max-width: 769px) {
+    .city__content {
         grid-template-areas: 
-        "title artists" 
-        "img texts"
-        "button texts"
-        "span texts";
-    padding: 24px;
-    
-        
+            "title artists" 
+            "img texts"
+            "button texts"
+            "span texts";
+        padding: 24px;
     }
-    .city__title{
-        max-width: 340;
-        font-size: 42px;
+
+    .city__title {
         max-width: 340px;
+        font-size: 42px;
     }
-   
-    .city__art{
+
+    .city__art {
         font-size: 14px;
     }
-    .city__article{
+
+    .city__article {
         font-size: 16px;
     }
-    .city__img{
-        
+
+    .city__img {
         max-width: 332px;
     }
-    .city__btn-link{
+
+    .city__btn-link {
         font-size: 16px;
-        grid-row-gap: 46px;
-      }
-    
+        grid-row-gap: 46px; /* Corrigido para grid-row-gap */
+    }
 }
-@media screen and (max-width: 470px) {
-    /*  fazer o grid area igual la em cima mas um embaixo do outro
-     */
-     
-    
-        .city__content{
-            grid-template-areas: 
-            "title " 
+
+@media screen and (max-width: 320px) {
+    .city__content {
+        grid-template-areas: 
+            "title" 
             "artists"
             "img"
             "texts"
             "button";
-            padding-top: 62px;
-        
-            gap: 16px;
-        }
-        .city__title{
-            font-size: 32px;
-        }
-        .city__subtitle{
-           padding-top:30px ;
-           
-        }
-        .city__art{
-            padding-top: 8px;
-            font-size: 18px;
-        }
-        
-        .city__paragraph{
-            padding: 16px;
-        }
-        .city__btn-link{
-            font-size: 14px;
-            padding: 16px 20px;
-        }
-    
-    
-     
+        padding: 62px 0; /* Corrigido o valor de preenchimento */
+    }
 
+    .city__title {
+        font-size: 32px;
+    }
+
+    .city__subtitle {
+        padding-top: 30px;
+    }
+
+    .city__art {
+        padding-top: 8px;
+        font-size: 18px;
+    }
+
+    .city__paragraph {
+        padding: 16px;
+    }
+
+    .city__btn-link {
+        font-size: 14px;
+        padding: 16px 20px;
+    }
 }
