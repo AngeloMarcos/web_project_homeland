@@ -39,10 +39,10 @@
       margin: 0 auto;
   }
   .article__content {
-      padding: 24px;
-  }
+    padding: 16px;
+}
   .article__quote {
-      padding-top: 50px;
+      padding-top: 40px;
   }
   .article__quote-cite {
       padding-top: 26px;
@@ -57,20 +57,7 @@
       padding: 0 16px;
   }
   .article__quote {
-      margin-top: 40px;
-      line-height: 30px;
       margin-bottom: 55px;
   }
-  .article__content {
-      padding: 16px;
-  }
-  .article__quote {
-      padding-top: 40px;
-  }
-  .article__quote-cite {
-      padding-top: 10px;
-  }
-  .article__paragraph {
-      padding-top: 32px;
-  }
+ 
 }

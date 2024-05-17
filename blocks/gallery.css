@@ -17,17 +17,6 @@
         display: block;
         text-align: center;
     }
-    .gallery__image {
-        padding: 8px;
-    }
+    
 }
 
-@media screen and (max-width: 470px) {
-    .gallery {
-        display: block;
-        text-align: center;
-    }
-    .gallery__image {
-        padding: 8px;
-    }
-}

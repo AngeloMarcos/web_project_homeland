@@ -4,14 +4,4 @@
   margin: 0 auto;
 }
 
-@media screen and (max-width: 769px) {
-  .page {
-      gap: 88px; /* Adicionado o espaçamento entre elementos */
-  }
-}
 
-@media screen and (max-width: 320px) {
-  .page {
-      padding: 8px; /* Adicionado o preenchimento para telas menores */
-  }
-}

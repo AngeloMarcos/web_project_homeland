@@ -34,6 +34,7 @@
   background-repeat: no-repeat;
   object-fit: cover;
   width: 100%;
+  margin: 0 auto;
 }
 
 .header__logo {
@@ -43,56 +44,23 @@
 }
 
 @media screen and (max-width: 769px) {
-  .header__container {
-      padding-top: 90px;
-  }
+  
   .header__title {
-      margin: 0 auto;
       margin-bottom: 32px;
-      font-size: 96px;
-      font-weight: 900;
-      max-width: 793px;
-      text-align: center;
   }
-  .header__cover {
-      width: 100%;
-      margin: 0 auto;
-      padding-top: 64px;
-  }
-  .header__subtitle {
-      font-size: 30px;
-      line-height: 1.2;
-      width: 720px;
-      text-align: center;
-      margin: 0 auto;
-  }
+  
 }
 
 @media screen and (max-width: 320px) {
-  .header__container {
-      padding: 0 16px;
-  }
-  .header__logo {
-      max-width: 200px;
-      margin: 0 auto;
-  }
+  
   .header__title {
-      margin: 50px auto 32px auto; /* Ajustei a margem superior */
-      width: 228px;
       font-size: 40px;
-      font-weight: 900;
-      max-width: 793px;
       line-height: 44px;
   }
   .header__subtitle {
       margin-top: 16px;
       font-size: 16px;
       line-height: 20px;
-      width: 288px;
-      text-align: center; /* Adicionei para garantir a centralização do texto */
   }
-  .header__cover {
-      width: 100%;
-      margin: 0 auto;
-  }
+  
 }

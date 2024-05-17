@@ -76,7 +76,7 @@
     background: linear-gradient(90deg, rgba(2, 120, 254, 0.25) 0%, rgba(0, 58, 123, 0.25) 99.98%);
 }
 
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 770px) {
     .city__content {
         grid-template-areas: 
             "title artists" 
@@ -85,31 +85,13 @@
             "span texts";
         padding: 24px;
     }
-
-    .city__title {
-        max-width: 340px;
-        font-size: 42px;
-    }
-
-    .city__art {
-        font-size: 14px;
-    }
-
-    .city__article {
-        font-size: 16px;
-    }
-
-    .city__img {
-        max-width: 332px;
-    }
-
     .city__btn-link {
         font-size: 16px;
-        grid-row-gap: 46px; /* Corrigido para grid-row-gap */
+       
     }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 470px) {
     .city__content {
         grid-template-areas: 
             "title" 
@@ -117,28 +99,18 @@
             "img"
             "texts"
             "button";
-        padding: 62px 0; /* Corrigido o valor de preenchimento */
+    
     }
 
     .city__title {
         font-size: 32px;
     }
 
-    .city__subtitle {
-        padding-top: 30px;
-    }
 
-    .city__art {
-        padding-top: 8px;
-        font-size: 18px;
-    }
 
-    .city__paragraph {
-        padding: 16px;
-    }
-
+    
     .city__btn-link {
-        font-size: 14px;
+        font-size: 12px;
         padding: 16px 20px;
     }
 }
